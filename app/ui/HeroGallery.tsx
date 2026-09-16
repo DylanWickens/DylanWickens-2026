@@ -8,10 +8,11 @@ export default function HeroGallery() {
   return (
     <section
       id="hero-projects"
-      className="px-4 grid grid-cols-8 gap-x-4 mt-32 [&>div:first-child]:mt-0 gap-y-8 relative">
+      className="relative mx-auto flex max-w-[2000px] flex-col gap-4 xl:mt-32 xl:grid xl:grid-cols-8 xl:gap-x-4 xl:gap-y-8 [&>div:first-child]:mt-0">
       <div className="contents">
-        <Link href="/temple" className="col-start-1 col-span-4">
-          <ParralaxImage delay={100}>
+
+        <div className="xl:col-start-1 xl:col-span-5">
+          <ParralaxImage delay={190} href="/temple">
             <Image
               src="/images/temple/cover-1.png"
               alt="Temple Underground"
@@ -19,10 +20,10 @@ export default function HeroGallery() {
               height={2500}
             />
           </ParralaxImage>
-        </Link>
+        </div>
 
-        <div className="col-start-6 col-span-3 ">
-          <ParralaxImage delay={190}>
+        <div className="xl:col-start-7 xl:col-span-2">
+          <ParralaxImage delay={190} href="/mino">
             <Image
               src="/images/mino/cover.png"
               alt="Temple Underground"
@@ -34,8 +35,8 @@ export default function HeroGallery() {
       </div>
 
       <div className="contents ">
-        <div className="col-start-1 col-span-6">
-          <ParralaxImage delay={260}>
+        <div className="xl:col-start-1 xl:col-span-6">
+          <ParralaxImage delay={260} href="/EmergentX">
             <video
               src="https://media.wickens.design/EmergentX/DW-EX-Winebottle-ERC-Optimised.mp4"
               autoPlay
@@ -45,8 +46,9 @@ export default function HeroGallery() {
             />
           </ParralaxImage>
         </div>
-        <div className="col-start-7 col-span-2">
-          <ParralaxImage delay={120}>
+
+        <div className="xl:col-start-7 xl:col-span-2">
+          <ParralaxImage delay={120} href="#">
             <div className="w-full h-68 bg-foreground"></div>
           </ParralaxImage>
         </div>
